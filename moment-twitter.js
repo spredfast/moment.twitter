@@ -74,11 +74,11 @@
   };
 
   if (typeof define === 'function' && define.amd) {
-    define('moment-twitter', ['moment'], function(moment) {
+    define('moment-twitter', ['momentjs'], function(moment) {
       return this.moment = initialize(moment);
     });
   } else if (typeof module !== 'undefined') {
-    module.exports = initialize(require('moment'));
+    module.exports = initialize(require('momentjs'));
   } else if (typeof window !== "undefined" && window.moment) {
     this.moment = initialize(this.moment);
   }

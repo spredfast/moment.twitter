@@ -1,6 +1,6 @@
 {
   "name": "moment-twitter",
-  "version": "0.2.0",
+  "version": "0.2.0-mr",
   "description": "An extension to moment.js that formats dates like Twitter",
   "main": "moment-twitter.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hijonathan/moment.twitter.git"
+    "url": "git://github.com/spredfast/moment.twitter.git"
   },
   "keywords": [
     "momentjs",
@@ -26,7 +26,7 @@
     "url": "https://github.com/hijonathan/moment.twitter/issues"
   },
   "dependencies": {
-    "moment": "^2.4.0"
+    "momentjs": "^2.4.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
