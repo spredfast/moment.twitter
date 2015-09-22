@@ -68,11 +68,11 @@ initialize = (moment) ->
 
 if typeof define is 'function' and define.amd
     # AMD. Register as an anonymous module.
-    define 'moment-twitter', ['momentjs'], (moment) ->
+    define 'moment-twitter', ['moment'], (moment) ->
         @moment = initialize moment
 else if typeof module isnt 'undefined'
     # CommonJS
-    module.exports = initialize(require('momentjs'))
+    module.exports = initialize(require('moment'))
 else if typeof window isnt "undefined" and window.moment
     # Browser globals
     @moment = initialize @moment
